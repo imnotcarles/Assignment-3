@@ -24,12 +24,14 @@ public class AmbiguousCase {
             } else if (h < a && a < b) {
                 System.out.println("There are two triangles (ambiguous case).");
             }
-        } else {
+        } else if (angleA > 90) {
             if (a < b || a == b) {
                 System.out.println("There is no triangle.");
             } else {
                 System.out.println("There is one triangle.");
             }
+        } else {
+            System.out.println("There is a right triangle.");
         }
     }
 }
